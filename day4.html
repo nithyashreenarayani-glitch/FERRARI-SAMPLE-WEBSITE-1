@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>www.zoho.com</title>
+
+    <style>
+
+        body{
+            background-color: red;
+            margin: 0;
+            
+        }
+        .Main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(243, 242, 245);
+            position: relative;
+        }
+
+        .Box{
+            width: 20vw;
+            height: 40vh;
+            font-size: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            color: white;
+            transition: all 1s ease-in-out;
+            font-weight: bold;
+        }
+
+        .sub1{
+            background-color: red;
+            top:30vh;
+            left:4vw;
+            position: absolute;
+            
+        }
+
+        .sub2{
+            background-color:green;
+            position: absolute;
+            top: 35vh;
+            left: 28vw;
+           
+        }
+
+        .sub3{
+            background-color:rgb(6, 97, 235);
+            top:30vh;
+            right: 28vw;
+            position: absolute;
+        }
+
+        .sub4{
+            background-color: yellow;
+            position: absolute;
+            top: 35vh;
+            right: 4vw;
+        }
+        
+        .Main:hover .sub1{
+            border:20px solid red;
+            background-color: rgb(255,255,255,0);
+            color: red;
+            top: 35vh;
+            left: 6vw;
+            transform: rotate(15deg);
+        }
+
+        .Main:hover .sub2{
+            border:20px solid green;
+            background-color:  rgb(255,255,255,0);
+            color: green;
+            top: 30vh;
+            transform: rotate(-15deg);
+        }
+
+        .Main:hover .sub3{
+            border:20px solid rgb(6, 97, 235) ;
+            background-color: rgb(255,255,255,0);
+            color:rgb(6, 97, 235);
+            top: 35vh;
+            transform: rotate(15deg);
+        }
+
+        .Main:hover .sub4{
+            border:20px solid yellow;
+            background-color: rgb(255,255,255,0);
+            color: yellow;
+            top: 30vh;
+            right: 6vw;
+            transform: rotate(-15deg);
+        }
+
+        .sub5{
+            position: fixed;
+            top: 5vh;
+            
+        }
+
+        .Main2{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="Main">
+        <div class="Box sub1">Z</div>
+        <div class="Box sub2">O</div>
+        <div class="Box sub3">H</div>
+        <div class="Box sub4">O</div>
+        <div class="sub5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmp27dS9_KHw1FFLz9iBQ9aiPk2NqaYDrxXA&s" alt="">
+        </div>
+    </div>
+
+    <div class="Main2">
+
+    </div>
+</body>
+</html>
