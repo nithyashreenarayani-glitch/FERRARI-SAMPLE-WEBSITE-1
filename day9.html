@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .main1 {
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(88, 1, 1);
+            position: relative;
+        }
+
+        .main11 {
+
+            top: 50%;
+            left: 50%;
+            font-size: small;
+            color: blanchedalmond;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .main2 {
+            width: 100vw;
+            height: 80vh;
+            color: blueviolet;
+            position: relative;
+        }
+
+        .main21 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            color: rgb(1, 1, 15);
+        }
+
+        .main21 h1 {
+            font-size: xx-large
+        }
+
+        .main22 button {
+            position: absolute;
+            top: 310px;
+            left: 100px;
+            width: 100px;
+            height: 30px;
+            font-size: x-large;
+        }
+
+        .main23 {
+            position: absolute;
+            top: 85px;
+            right: 400px;
+        }
+
+        .main23 img {
+            height: 500px;
+            width: 350px;
+            border-radius: 200px;
+        }
+
+        .main24 {
+            position: absolute;
+            color: black;
+            top: 200px;
+            right: 410px;
+            display: none;
+        }
+
+        .main24 h1 {
+            font-size: xx-large;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main3 {
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(88, 1, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <div class="main11">
+            <h1>M.Nithyashreenarayani</h1>
+        </div>
+    </div>
+    <div class="main2">
+        <img class="img1"
+            src="https://plus.unsplash.com/premium_photo-1701892428860-ca4913e92274?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+        <div class="main21">
+            <h1 id="h1">Hi,</h1>
+            <h1 id="h2">This is M.Nithyashreenarayani</h1>
+            <h1 id="h3">Software Engineer</h1>
+        </div>
+        <div class="main22">
+            <button id="b"><b>About</b></button>
+        </div>
+        <div class="main23" id="visible">
+            <img src="Nithyashree pic.jpeg" alt="">
+        </div>
+        <div class="main24" id="hidden">
+            <h1>This is hidden only </h1>
+            <h1>when event happens </h1>
+        </div>
+    </div>
+    <div class="main3"></div>
+
+    <script>
+        document.getElementById('b').onclick = function () {
+            document.getElementById('h1').innerHTML = "Junior Developer";
+            document.getElementById('h2').innerHTML = "Working at Zoho";
+            document.getElementById('h3').innerHTML = "B.tech IT Graduate";
+            document.getElementById('visible').style.display = 'none';
+            document.getElementById('hidden').style.display = 'block';
+            document.getElementById('hidden').style.color = 'Red'
+        }
+    </script>
+</body>
+
+</html>
